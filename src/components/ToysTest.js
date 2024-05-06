@@ -4,7 +4,7 @@ function ToysTest({name,image,likes}){
     return(
         <div>
             <h1>Name: {name}</h1>
-            <img src={image}/>
+            <img alt="loading..." src={image}/>
             <p>Likes: {likes}</p>
         </div>
     );
