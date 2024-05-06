@@ -18,7 +18,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/components/App.js</code> and save to reload.
         </p>
         <p>Team 9 welcome to your Phase 2 Project</p>
         <a
@@ -30,9 +30,9 @@ function App() {
           Learn React
         </a>
         <p>Dummy server info below</p>
-        {toys.map(toy => 
+        {toys.map(toy =>
             <ToysTest toys={toys} name={toy.name} image={toy.image} likes={toy.likes}/>
-        )} 
+         )}
       </header>
       
     </div>
