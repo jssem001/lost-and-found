@@ -1,7 +1,14 @@
-# Getting Started with Create React App
+# LOST AND FOUND WEB APPLICATION 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project has been done by a group 8 Team members whose names are:
+1) Joshua ssemwanga
+2) Shadrack Mutai
+3) Jean Sheila Wambui Wachuka
+4) Samsom Mubeya
 
+## PROJECT DESCRIPTION 
+In this prjects the team member are to create a lost and found web application where a user can;
+a)
 ## Available Scripts
 
 In the project directory, you can run:
@@ -11,8 +18,7 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+T
 
 ### `npm test`
 
