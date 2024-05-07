@@ -2,15 +2,49 @@
     "toys": [
       {
         "id": 1,
+        "category": "pet",
         "name": "Woody",
         "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-        "likes": 8
+        "description": "Does not bite. Has an orange collar engraved woody. Huggles his tails to the name woody",
+        "location": "https://www.google.com/maps?q=-0.9989192,37.1427954&z=17&hl=en",   
+        "likes": 8,
+        "comments":[
+            {
+                "id": 1,
+                "comment": "Looks so cute"
+            },
+            {
+                "id": 2,
+                "comment": "Looks so cute"
+            },
+            {
+                "id": 3,
+                "comment": "I think i saw him around Woodsvaley 7-street"
+            }
+        ]
       },
       {
         "id": 2,
-        "name": "Buzz Lightyear",
-        "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-        "likes": 14
-      }
+        "category": "pet",
+        "name": "Spoungebob",
+        "image": "https://img.freepik.com/premium-photo/3d-cute-lemon-character_660901-19197.jpg?w=900",
+        "description": "loves water. Has an orange wristband engraved Spongebob. Jumps around to the name Spongebob",
+        "location": "https://www.google.com/maps?q=-0.9989192,37.1427954&z=17&hl=en",   
+        "likes": 8,
+        "comments":[
+            {
+                "id": 1,
+                "comment": "She is lovely"
+            },
+            {
+                "id": 2,
+                "comment": "Hey I have him contact me at +1 264 839 89"
+            },
+            {
+                "id": 3,
+                "comment": "So glad you found him"
+            }
+        ]
+      },
     ]
 }
