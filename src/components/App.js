@@ -20,12 +20,13 @@ function App() {
         <p>
           Edit <code>src/components/App.js</code> and save to reload.
         </p>
-        <p>Team 9 welcome to your Phase 2 Project</p>
+        <p class="text-3xl truncate">Team 9 welcome to your Phase 2 Project</p>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
+          class="no-underline hover:underline ..."
         >
           Learn React
         </a>
