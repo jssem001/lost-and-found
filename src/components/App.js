@@ -30,7 +30,7 @@ function App() {
         >
           Learn React
         </a>
-        <p>Dummy server info below</p>
+        <p class="text-red-600">Dummy server info below</p>
         {toys.map(toy=> 
             <ToysTest toys={toys} name={toy.name} image={toy.image} likes={toy.likes}/>
         )}

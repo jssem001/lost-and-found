@@ -1,13 +1,13 @@
 # LOST AND FOUND WEB APPLICATION 
 
-This project has been done by a group 8 Team members whose names are:
+This project has been done by a group 9 Team members whose names are:
 1) Joshua Ssemwanga
 2) Shadrack Mutai
 3) Jean Sheila Wambui Wachuka
-4) Samsom Mubeya
+4) Samson Mubeya
 
 ## PROJECT DESCRIPTION 
-In this prjects the team member are to create a lost and found web application where a user can;
+In this project the team member are to create a lost and found web application where a user can;
 a)
 ## Available Scripts
 
