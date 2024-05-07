@@ -4,7 +4,7 @@ import '../App.css';
 import ToysTest from './ToysTest';
 
 function App() {
-  const [toys, setToys] = useState("")
+  const [toys, setToys] = useState([])
   
   useEffect(() =>{
     fetch("http://localhost:8002/toys")
@@ -30,9 +30,9 @@ function App() {
           Learn React
         </a>
         <p>Dummy server info below</p>
-        {toys.map(toy =>
+        {toys.map(toy=> 
             <ToysTest toys={toys} name={toy.name} image={toy.image} likes={toy.likes}/>
-         )}
+        )}
       </header>
       
     </div>
