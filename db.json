@@ -1,5 +1,5 @@
 {
-    "toys": [
+    "items": [
       {
         "id": 1,
         "contact": "0712343521",
@@ -10,15 +10,18 @@
         "comments":[
             {
                 "id": 1,
-                "comment": "Looks so cute"
+                "name": "Bravin",
+                "text": "Looks so cute"
             },
             {
                 "id": 2,
-                "comment": "Looks so cute"
+                "name": "Calvin",
+                "text": "Looks so cute"
             },
             {
                 "id": 3,
-                "comment": "I think i saw him around Woodsvaley 7-street"
+                "name": "Marvin",
+                "text": "I think i saw him around WoodsValley 7-street at 7pm."
             }
         ]
       },
@@ -32,37 +35,18 @@
         "comments":[
             {
                 "id": 1,
-                "comment": "She is lovely"
+                "name": "Gavin",
+                "text": "She is lovely"
             },
             {
                 "id": 2,
-                "comment": "Hey I have him contact me at +1 264 839 89"
+                "name": "Vin",
+                "text": "Hey I have him contact me at +1 264 839 89"
             },
             {
                 "id": 3,
-                "comment": "So glad you found him"
-            }
-        ]
-      },
-      {
-        "id": 3,
-        "contact": "0776543210",
-        "name": "Keys",
-        "image": "https://geeklift.com/wp-content/uploads/2013/07/keys1.jpg",
-        "description": "loves water. Has an orange wristband engraved Spongebob. Jumps around to the name Spongebob",
-        "location": "https://www.google.com/maps?q=-0.9989192,37.1427954&z=17&hl=en",   
-        "comments":[
-            {
-                "id": 1,
-                "comment": "She is lovely"
-            },
-            {
-                "id": 2,
-                "comment": "Hey I have him contact me at +1 264 839 89"
-            },
-            {
-                "id": 3,
-                "comment": "So glad you found him"
+                "name": "Marvin",
+                "text": "So glad you found him"
             }
         ]
       }

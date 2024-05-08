@@ -1,39 +1,26 @@
 import React, {useState,useEffect} from 'react';
-import logo from '../logo.svg';
 import '../App.css';
-import ToysTest from './ToysTest';
+import ItemsList from './ItemsList';
 
 function App() {
-  const [toys, setToys] = useState([])
+  const [items, setItems] = useState([])
   
   useEffect(() =>{
-    fetch("http://localhost:8002/toys")
-      .then(r => r.json())
-      .then(data => setToys(data))
+    fetch("http://localhost:8002/items")
+      .then(res => res.json())
+      .then(data => setItems(data))
       .catch(error => console.error(error))
   }, [])
 
   return (
-    <div className="App">
+    <div className="App ">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/components/App.js</code> and save to reload.
-        </p>
-        <p class="text-3xl truncate">Team 9 welcome to your Phase 2 Project</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="no-underline hover:underline ..."
-        >
-          Learn React
-        </a>
-        <p class="text-red-600">Dummy server info below</p>
-        {toys.map(toy=> 
-            <ToysTest toys={toys} name={toy.name} image={toy.image} likes={toy.likes}/>
-        )}
+
+        <p>Welcome to your <span className='text-red-900'>lost</span> and <span className='text-green-900'>found</span> items page.</p>
+
+        {items.map(item =>
+            <ItemsList items={items} name={item.name} image={item.image} likes={item.likes}/>
+         )}
       </header>
       {/* info */}
     </div>
