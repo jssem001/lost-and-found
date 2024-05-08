@@ -11,15 +11,18 @@
         "comments":[
             {
                 "id": 1,
-                "comment": "Looks so cute"
+                "name": "Bravin",
+                "text": "Looks so cute"
             },
             {
                 "id": 2,
-                "comment": "Looks so cute"
+                "name": "Calvin",
+                "text": "Looks so cute"
             },
             {
                 "id": 3,
-                "comment": "I think i saw him around Woodsvaley 7-street"
+                "name": "Marvin",
+                "text": "I think i saw him around WoodsValley 7-street at 7pm."
             }
         ]
       },
@@ -34,17 +37,20 @@
         "comments":[
             {
                 "id": 1,
-                "comment": "She is lovely"
+                "name": "Gavin",
+                "text": "She is lovely"
             },
             {
                 "id": 2,
-                "comment": "Hey I have him contact me at +1 264 839 89"
+                "name": "Vin",
+                "text": "Hey I have him contact me at +1 264 839 89"
             },
             {
                 "id": 3,
-                "comment": "So glad you found him"
+                "name": "Marvin",
+                "text": "So glad you found him"
             }
         ]
-      },
+      }
     ]
 }
