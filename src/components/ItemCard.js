@@ -7,7 +7,7 @@ function ItemCard({item}) {
     <div>
         <h5>{item.category}</h5>
         <h3 className="text-xl-font-bold mb-2">{item.name}</h3>
-        <img src="" alt="" />
+        <img src={item.image} alt="loading" />
         <p>{item.contact}</p>
         <p>{item.location}</p>
         <p>{item.description}</p>

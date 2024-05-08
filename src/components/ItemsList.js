@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemsForm from './ItemsForm';
+//import ItemsForm from './ItemsForm';
 import ItemCard from './ItemCard';
 
 function ItemsList({items}) {
@@ -15,9 +15,13 @@ function ItemsList({items}) {
         </div>
       </section>
         <h2>List of Items</h2>
-        {items.map(item => (
+        <div class= "grid grid-cols-4 gap-4">
+         {items.map(item => (
           <ItemCard key={item.id} item={item} name={item.name} image={item.image} likes={item.likes} />
-        ))}
+        ))} 
+        </div>
+
+        
         {/* <ItemsForm /> */}
       
     </>
