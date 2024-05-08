@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 
 function CommentsForm({onAddComment}) {
-  const [newComment,setNewComment] =useState("");
+  const [newComment,setNewComment] = useState("");
 
   const handleSubmit=(e) => {
     e.preventDefault();

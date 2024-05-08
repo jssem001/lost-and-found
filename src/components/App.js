@@ -1,12 +1,26 @@
 import React, {useState,useEffect} from 'react';
 import '../App.css';
-import ItemsForm from './ItemsForm';
+import Search from './Search';
 import ItemsList from './ItemsList';
 import NavBar from './NavBar';
-import Footer from './Footer';
 
 function App() {
+  const [searchTerm, setSearchTerm] = React.useState("");
+  function handleSearchChange(searchTerm) {
+    setSearchTerm(searchTerm);
+  }
   const [items, setItems] = useState([])
+
+  useEffect(() => {
+    if (searchTerm === "") {
+      setItems(items);
+    } else {
+      const filter = items.filter((item) =>
+        item.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+      setItems(filter);
+    }
+  }, [searchTerm, items]);
   
   useEffect(() =>{
     fetch("http://localhost:8002/items")
@@ -20,9 +34,12 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <main>
-            <ItemsList items={items} name={items.name} image={items.image} likes={items.likes}/>
-      </main>
+      <div className="p-2 text-end">
+        <Search onSearchChange={handleSearchChange} />
+      </div>
+      <div>
+            <ItemsList items={items} name={items.name} image={items.image} likes={items.likes} searchTerm={searchTerm} />
+      </div>
       <div>
         {/* <Footer /> */}
       </div>  

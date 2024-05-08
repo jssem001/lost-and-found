@@ -14,7 +14,7 @@ function ItemsList({items}) {
         </div>
       </section>
         <h2>List of Items</h2>
-        <div class= "grid grid-cols-4 gap-4">
+        <div class= "grid grid-cols-3 gap-4 mx-2">
          {items.map(item => (
           <ItemCard key={item.id} item={item} name={item.name} image={item.image} likes={item.likes} />
         ))} 
