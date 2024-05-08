@@ -21,16 +21,18 @@ function CommentsList() {
           <p>{comment.name}</p>
           <p>{comment.text}</p>
 
-       <ul>
+       {/* <ul>
         {comments.map((comment, index) => (
           <li key={index}>{comment}</li>
         ))}
-          </ul>
+          </ul> */}
 
         </div>
-  );
+      ))}
+  </div>
+  
       
       /*<CommentsForm />*/
-    }
+    )}
 
 export default CommentsList;

@@ -1,4 +1,5 @@
 import React from 'react'
+import CommentsList from './CommentsList'
 
 function ItemCard({item, setOndelete}) {
   function handleDelete(id) {
@@ -32,7 +33,9 @@ function ItemCard({item, setOndelete}) {
           {
           item.comments && item.comments.map((comment)=>(
               <div className='p-2 bg-gray-400 my-2 rounded ' key={comment.id}>
-                <p> <span className="font-semibold text-2xl" >{comment.name};</span> <span className='italic text-xl '> {comment.text} </span> </p>
+                {/* <p> <span className="font-semibold text-2xl" >{comment.name};</span> <span className='italic text-xl '> {comment.text} </span> </p> */}
+                <CommentsList />
+
               </div>
           ))
           }
