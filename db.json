@@ -2,12 +2,11 @@
     "items": [
       {
         "id": 1,
-        "category": "pet",
+        "contact": "0712343521",
         "name": "Woody",
         "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
         "description": "Does not bite. Has an orange collar engraved woody. Huggles his tails to the name woody",
         "location": "https://www.google.com/maps?q=-0.9989192,37.1427954&z=17&hl=en",   
-        "likes": 8,
         "comments":[
             {
                 "id": 1,
@@ -28,12 +27,11 @@
       },
       {
         "id": 2,
-        "category": "pet",
-        "name": "Spoungebob",
+        "contact": "0798765432",
+        "name": "Spongebob",
         "image": "https://img.freepik.com/premium-photo/3d-cute-lemon-character_660901-19197.jpg?w=900",
         "description": "loves water. Has an orange wristband engraved Spongebob. Jumps around to the name Spongebob",
         "location": "https://www.google.com/maps?q=-0.9989192,37.1427954&z=17&hl=en",   
-        "likes": 8,
         "comments":[
             {
                 "id": 1,

@@ -22,7 +22,7 @@ function App() {
             <ItemsList items={items} name={item.name} image={item.image} likes={item.likes}/>
          )}
       </header>
-      
+      {/* info */}
     </div>
   );
 }
