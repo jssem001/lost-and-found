@@ -15,15 +15,24 @@ function CommentsList() {
       <h4>Comments</h4>
       <CommentsForm onAddComment={handleAddComment}/>
        {/* Display comments */}
-       <ul>
+
+      {comments.map(comment => (
+        <div className="" key={comment.id}>
+          <p>{comment.name}</p>
+          <p>{comment.text}</p>
+
+       {/* <ul>
         {comments.map((comment, index) => (
           <li key={index}>{comment}</li>
         ))}
-          </ul>
+          </ul> */}
+
         </div>
-  );
+      ))}
+  </div>
+  
       
       /*<CommentsForm />*/
-    }
+    )}
 
 export default CommentsList;
