@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import CommentsList from './CommentsList'
+import CommentsForm from './CommentsForm';
 
 
 function ItemCard({item, setOndelete}) {
+  const [comments,setComments]=useState([]);
+
+  const handleAddComment =(newComment) =>{
+    setComments([...comments,newComment]);
+  };
   function handleDelete(id) {
     fetch(`http://localhost:8002/items/${id}`, {
             method: 'DELETE',
@@ -35,7 +41,8 @@ function ItemCard({item, setOndelete}) {
           item.comments && item.comments.map((comment)=>(
               <div className='p-2 bg-gray-400 my-2 rounded ' key={comment.id}>
                 {/* <p> <span className="font-semibold text-2xl" >{comment.name};</span> <span className='italic text-xl '> {comment.text} </span> </p> */}
-                <CommentsList />
+                <CommentsList item={item} />
+                <CommentsForm onAddComment={handleAddComment}/>
 
               </div>
           ))
