@@ -3,6 +3,7 @@ import axios from "axios";
 
 
 function AddItem({setToys}){
+    //to create a state for the new item
 const [formdata, setFormdata] =useState(
     {
         image:"",
