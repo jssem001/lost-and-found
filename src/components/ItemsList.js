@@ -14,10 +14,15 @@ function ItemsList({items}) {
           <div class="grid gap-8 lg:grid-cols-2"></div>  
         </div>
       </section>
+      
         <h2>List of Items</h2>
-        {items.map(item => (
+        <div>
+         {items.map(item => (
           <ItemCard key={item.id} item={item} name={item.name} image={item.image} likes={item.likes} />
-        ))}
+        ))} 
+        </div>
+
+        
         {/* <ItemsForm /> */}
       
     </>
