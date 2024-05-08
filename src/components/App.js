@@ -1,6 +1,8 @@
 import React, {useState,useEffect} from 'react';
 import '../App.css';
 import ItemsList from './ItemsList';
+import NavBar from './NavBar';
+import Footer from './Footer';
 
 function App() {
   const [items, setItems] = useState([])
@@ -14,15 +16,15 @@ function App() {
 
   return (
     <div className="App ">
-      <header className="App-header">
-
-        <p>Welcome to your <span className='text-red-900'>lost</span> and <span className='text-green-900'>found</span> items page.</p>
-
-        {items.map(item =>
-            <ItemsList items={items} name={item.name} image={item.image} likes={item.likes}/>
-         )}
+      <header>
+        <NavBar />
       </header>
-      {/* info */}
+      <main>
+            <ItemsList items={items} name={items.name} image={items.image} likes={items.likes}/>
+      </main>
+      <div>
+        {/* <Footer /> */}
+      </div>  
     </div>
   );
 }
