@@ -34,12 +34,9 @@ function App() {
       <header>
         <NavBar />
       </header>
-      <div className="p-2 text-end">
-        <Search onSearchChange={handleSearchChange} />
-      </div>
-      <div>
-            <ItemsList items={items} name={items.name} image={items.image} likes={items.likes} searchTerm={searchTerm} />
-      </div>
+      <main>
+            <ItemsList items={items} name={items.name} image={items.image} likes={items.likes}/>
+      </main>
       <div>
         {/* <Footer /> */}
       </div>  
