@@ -1,6 +1,7 @@
 import React from 'react'
 import CommentsList from './CommentsList'
 
+
 function ItemCard({item, setOndelete}) {
   function handleDelete(id) {
     fetch(`http://localhost:8002/items/${id}`, {
@@ -17,7 +18,7 @@ function ItemCard({item, setOndelete}) {
     <>
     <div className="bg-gray-500 ">
       <div className="text-start px-6">
-        <h3 className=""> <span className="font-semibold text-3xl text-black" >Name:</span> {item.name}</h3>
+        <h3> <span className="font-semibold text-3xl text-black" >Name:</span> {item.name}</h3>
         <p><span className="font-semibold text-3xl text-black" >Contact:</span> {item.contact}</p>
         <p><span className="font-semibold text-3xl text-black" >Location:</span> {item.location}</p>
         <p> <span className="font-semibold text-3xl text-black" >Description:</span> <span>{item.description}</span> </p>
