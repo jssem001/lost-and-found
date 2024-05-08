@@ -5,8 +5,8 @@
         "contact": "0712343521",
         "name": "Woody",
         "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-        "description": "Does not bite. Has an orange collar engraved woody. Huggles his tails to the name woody",
-        "location": "https://www.google.com/maps?q=-0.9989192,37.1427954&z=17&hl=en",   
+        "description": "Does not bite. Has an orange collar engraved woody. Huggles his tails to the name woody. Does not bite. Has an orange collar engraved woody. Huggles his tails to the name woody. Does not bite. Has an orange collar engraved woody. Huggles his tails to the name woody.",
+        "location": "Border-Point",
         "comments":[
             {
                 "id": 1,
@@ -21,7 +21,7 @@
             {
                 "id": 3,
                 "name": "Marvin",
-                "text": "I think i saw him around WoodsValley 7-street at 7pm."
+                "text": "I think I saw him around WoodsValley 7-street at 7pm. I think I saw him around WoodsValley 7-street at 7pm. I think I saw him around WoodsValley 7-street at 7pm. I think I saw him around WoodsValley 7-street at 7pm. I think I saw him around WoodsValley 7-street at 7pm."
             }
         ]
       },
@@ -31,7 +31,7 @@
         "name": "Spongebob",
         "image": "https://img.freepik.com/premium-photo/3d-cute-lemon-character_660901-19197.jpg?w=900",
         "description": "loves water. Has an orange wristband engraved Spongebob. Jumps around to the name Spongebob",
-        "location": "https://www.google.com/maps?q=-0.9989192,37.1427954&z=17&hl=en",   
+        "location": "Galaxy Park",   
         "comments":[
             {
                 "id": 1,
@@ -47,6 +47,31 @@
                 "id": 3,
                 "name": "Marvin",
                 "text": "So glad you found him"
+            }
+        ]
+      },
+      {
+        "id": 3,
+        "contact": "0712343521",
+        "name": "Woody",
+        "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+        "description": "Does not bite. Has an orange collar engraved woody. Huggles his tails to the name woody. Does not bite. Has an orange collar engraved woody. Huggles his tails to the name woody. Does not bite. Has an orange collar engraved woody. Huggles his tails to the name woody.",
+        "location": "Border-Point",
+        "comments":[
+            {
+                "id": 1,
+                "name": "Bravin",
+                "text": "Looks so cute"
+            },
+            {
+                "id": 2,
+                "name": "Calvin",
+                "text": "Looks so cute"
+            },
+            {
+                "id": 3,
+                "name": "Marvin",
+                "text": "I think I saw him around WoodsValley 7-street at 7pm. I think I saw him around WoodsValley 7-street at 7pm. I think I saw him around WoodsValley 7-street at 7pm. I think I saw him around WoodsValley 7-street at 7pm. I think I saw him around WoodsValley 7-street at 7pm."
             }
         ]
       }

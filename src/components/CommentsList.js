@@ -10,7 +10,7 @@ function CommentsList() {
       <h4>Comments</h4>
        {/* Display comments */}
       {comments.map(comment => (
-        <div key={comment.id}>
+        <div className="" key={comment.id}>
           <p>{comment.name}</p>
           <p>{comment.text}</p>
         </div>
