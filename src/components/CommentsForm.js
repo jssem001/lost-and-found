@@ -1,17 +1,30 @@
-import React from 'react';
+import React,{useState} from 'react';
 
-function CommentsForm() {
+function CommentsForm({onAddComment}) {
+  const [newComment,setNewComment] =useState("");
+
+  const handleSubmit=(e) => {
+    e.preventDefault();
+    if(!newComment.trim())
+    return;
+  onAddComment(newComment);
+  setNewComment("");
+  };
 
   return (
-    <div className="CommentsForm">
-      
-      <h5>Add Comment</h5>
-      <form>
-        <input>
-        </input>
+    
+      <form onSubmit={handleSubmit}>
+        <input
+        type="text"
+        placeholder="Add a comment"
+        value={newComment}
+        onChange={(e) => setNewComment(e.target.value)}
+        />
+        <button type="submit">Add Comment</button>
+        
       </form>
       
-    </div>
+   
   );
 }
 
