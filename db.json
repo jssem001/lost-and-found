@@ -2,12 +2,11 @@
     "toys": [
       {
         "id": 1,
-        "category": "pet",
+        "contact": "0712343521",
         "name": "Woody",
         "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
         "description": "Does not bite. Has an orange collar engraved woody. Huggles his tails to the name woody",
         "location": "https://www.google.com/maps?q=-0.9989192,37.1427954&z=17&hl=en",   
-        "likes": 8,
         "comments":[
             {
                 "id": 1,
@@ -25,12 +24,33 @@
       },
       {
         "id": 2,
-        "category": "pet",
+        "contact": "0798765432",
         "name": "Spongebob",
         "image": "https://img.freepik.com/premium-photo/3d-cute-lemon-character_660901-19197.jpg?w=900",
         "description": "loves water. Has an orange wristband engraved Spongebob. Jumps around to the name Spongebob",
         "location": "https://www.google.com/maps?q=-0.9989192,37.1427954&z=17&hl=en",   
-        "likes": 8,
+        "comments":[
+            {
+                "id": 1,
+                "comment": "She is lovely"
+            },
+            {
+                "id": 2,
+                "comment": "Hey I have him contact me at +1 264 839 89"
+            },
+            {
+                "id": 3,
+                "comment": "So glad you found him"
+            }
+        ]
+      },
+      {
+        "id": 3,
+        "contact": "0776543210",
+        "name": "Keys",
+        "image": "https://geeklift.com/wp-content/uploads/2013/07/keys1.jpg",
+        "description": "loves water. Has an orange wristband engraved Spongebob. Jumps around to the name Spongebob",
+        "location": "https://www.google.com/maps?q=-0.9989192,37.1427954&z=17&hl=en",   
         "comments":[
             {
                 "id": 1,

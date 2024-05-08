@@ -35,7 +35,7 @@ function App() {
             <ToysTest toys={toys} name={toy.name} image={toy.image} likes={toy.likes}/>
         )}
       </header>
-      
+      {/* info */}
     </div>
   );
 }
