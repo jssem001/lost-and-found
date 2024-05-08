@@ -1,14 +1,14 @@
 import React, {useState,useEffect} from 'react';
 import '../App.css';
-import ToysTest from './ToysTest';
+import ItemsList from './ItemsList';
 
 function App() {
-  const [toys, setToys] = useState([])
+  const [items, setItems] = useState([])
   
   useEffect(() =>{
-    fetch("http://localhost:8002/toys")
-      .then(r => r.json())
-      .then(data => setToys(data))
+    fetch("http://localhost:8002/items")
+      .then(res => res.json())
+      .then(data => setItems(data))
       .catch(error => console.error(error))
   }, [])
 
@@ -18,8 +18,8 @@ function App() {
 
         <p>Welcome to your <span className='text-red-900'>lost</span> and <span className='text-green-900'>found</span> items page.</p>
 
-        {toys.map(toy =>
-            <ToysTest toys={toys} name={toy.name} image={toy.image} likes={toy.likes}/>
+        {items.map(item =>
+            <ItemsList items={items} name={item.name} image={item.image} likes={item.likes}/>
          )}
       </header>
       
