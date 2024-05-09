@@ -257,6 +257,14 @@
       "contact": "123-456-7890",
       "description": "green in color",
       "location": "waiyaki on your way to kikuyu workshop"
+    },
+    {
+      "id": "bf5d",
+      "image": "https://thumbs.dreamstime.com/b/tool-box-wooden-work-close-up-51367747.jpg",
+      "name": "Spanner",
+      "contact": "098-234-7563",
+      "description": "A Full toolbox set ",
+      "location": "Outside wharehouse in Kilimani"
     }
   ]
 }
