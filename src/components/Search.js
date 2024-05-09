@@ -1,22 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Search({ onSearchChange }) {
-  const [search, setSearch] = useState("");
+function Search({ search, onSearchChange }) {
+  // const [search, setSearch] = useState("");
 
   function handleSearchChange(event) {
-    event.preventDefault();
-    const searchTerm = event.target.value;
-    setSearch(searchTerm);
-    onSearchChange(searchTerm);
+    onSearchChange(event.target.value);
   }
 
+  // function handleSearchChange(event) {
+  //   event.preventDefault();
+  //   const searchTerm = event.target.value;
+  //   setSearch(searchTerm);
+  //   onSearchChange(searchTerm);
+  // }
+
   return (
-    <div className="">
+    <>
+    <div className="space-2 mb-3">
       <input
-        className="rounded m-2" type="text" name="search" placeholder="Search..." value={search} onChange={handleSearchChange} required
+        className="rounded" type="text" name="search" placeholder="Search..." value={search} onChange={handleSearchChange}
       />
-      <button onClick={handleSearchChange} className="p-2 bg-gray-500 text-white rounded hover:bg-blue-400 "> Search </button>
+      <button className="p-2 bg-blue-400 text-white rounded"> Search </button>
     </div>
+    
+    </>
   );
 }
 
