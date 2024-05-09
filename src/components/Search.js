@@ -1,18 +1,12 @@
 import React from "react";
 
 function Search({ search, onSearchChange }) {
-  // const [search, setSearch] = useState("");
+
 
   function handleSearchChange(event) {
     onSearchChange(event.target.value);
   }
 
-  // function handleSearchChange(event) {
-  //   event.preventDefault();
-  //   const searchTerm = event.target.value;
-  //   setSearch(searchTerm);
-  //   onSearchChange(searchTerm);
-  // }
 
   return (
     <>

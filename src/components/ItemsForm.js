@@ -21,7 +21,7 @@ function ItemsForm({setItems}) {
       
       
       console.log(formdata)
-       axios.post("http://localhost:8002/items",formdata)
+       axios.post("https://seek-n-secure.onrender.com/items",formdata)
        .then(res=>{return console.log("Successfully posted data to server",setItems(res));})
        .catch(err=>console.log("error posting data",err))
     }
