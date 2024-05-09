@@ -31,7 +31,8 @@ In this project, the team members are to create a lost and found web application
 - Should be deployed(Both db.json and React - No undeployed project will be marked.)"	
 
 ## Endpoints
-The base URL for the back is: http://localhost:8002/items
+The base URL for the back is: https://seek-n-secure.onrender.com/items
+Frontend (website): https://effervescent-hamster-7e6676.netlify.app
 
 ## Core Deliverables
 The user should be able to:
