@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useParams } from "react-router-dom";
-
+import { Link } from 'react-router-dom';
 
 
 function ItemCard() {
@@ -39,7 +39,7 @@ function ItemCard() {
             <p><span className="font-semibold text-xl text-black" >Location:</span> {temi.location}</p>
             <p> <span className="font-semibold text-xl text-black" >Description:</span> <span>{temi.description}</span> </p>
             <div className="flex justify-between px-4">
-              <button className='bg-gray-700 text-green-700 rounded px-2'>Edit</button>
+              <Link to='/'><button className='bg-gray-700 text-green-700 rounded px-2'>Edit</button></Link>
               <button onClick={handleDelete} type="button" className='bg-red-700 text-white rounded px-2'>Delete</button>
             </div> 
         </div>
