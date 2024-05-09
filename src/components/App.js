@@ -20,10 +20,12 @@ function App() {
   }, [])
 
 
+
+
   return (
     <div className="App ">
       <header>
-        <NavBar />
+        <NavBar setItems={setItems}/>
       </header>
       <main>
             <ItemsList items={items} name={items.name} image={items.image} likes={items.likes}/>
