@@ -1,33 +1,33 @@
-import React, {useState,useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import '../App.css';
 import Search from './Search';
 import ItemsList from './ItemsList';
 import NavBar from './NavBar';
 
 function App() {
-  const [searchTerm, setSearchTerm] = React.useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [items, setItems] =useState([]);
+  const [filteredItems, setFilteredItems] = useState([]);
+
   function handleSearchChange(searchTerm) {
     setSearchTerm(searchTerm);
   }
-  const [items, setItems] = useState([])
 
   useEffect(() => {
-    if (searchTerm === "") {
-      setItems(items);
-    } else {
-      const filter = items.filter((item) =>
-        item.name.toLowerCase().includes(searchTerm.toLowerCase())
-      );
-      setItems(filter);
-    }
+    const filtered = items.filter(item =>
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredItems(filtered);
   }, [searchTerm, items]);
   
   useEffect(() =>{
     fetch("http://localhost:8002/items")
       .then(res => res.json())
-      .then(data => setItems(data))
-      .catch(error => console.error(error))
-  }, [])
+      .then(data => {
+        setItems(data);
+        setFilteredItems(data);
+      })
+  }, []);
 
   return (
     <div className="App ">
@@ -35,7 +35,8 @@ function App() {
         <NavBar />
       </header>
       <main>
-            <ItemsList items={items} name={items.name} image={items.image} likes={items.likes}/>
+        <Search onSearchChange={handleSearchChange} />
+        <ItemsList items={filteredItems} />
       </main>
       <div>
         {/* <Footer /> */}
