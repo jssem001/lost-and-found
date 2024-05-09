@@ -11,11 +11,11 @@ function Search({ onSearchChange }) {
   }
 
   return (
-    <div className="space-2">
+    <div className="">
       <input
-        type="text" name="search" placeholder="Search..." value={search} onChange={handleSearchChange}
+        className="rounded m-2" type="text" name="search" placeholder="Search..." value={search} onChange={handleSearchChange} required
       />
-      <button className="p-2 bg-gray-600 text-white rounded"> Search </button>
+      <button onClick={handleSearchChange} className="p-2 bg-gray-500 text-white rounded hover:bg-blue-400 "> Search </button>
     </div>
   );
 }

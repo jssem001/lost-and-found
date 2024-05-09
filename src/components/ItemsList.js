@@ -22,9 +22,8 @@ function ItemsList({items}) {
       <section class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {items.map( item => ( 
           
-        <div class="max-w-sm bg-white border border-gray-700 rounded-lg shadow dark:bg-white dark:border-black grid grid-cols-1">
-           
-            
+          <div class="max-w-sm bg-white border border-gray-700 rounded-lg shadow dark:bg-white dark:border-black grid grid-cols-1">
+
                 <img class="rounded-t-lg size-50" src={item.image} alt="loading..." />
             
             <div class="p-5">
@@ -41,8 +40,8 @@ function ItemsList({items}) {
                   </button>
                 </Link>
             </div>
-        </div> ))}
-        </section>
+          </div> ))}
+      </section>
           
         {/* <div class= "grid grid-cols-4 gap-4">
          {items.map(item => (
