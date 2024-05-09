@@ -1,29 +1,30 @@
-import React, {useState} from 'react';
-import CommentsForm from './CommentsForm';
+import React from 'react';
 
-function CommentsList() {
-
-    const [comments,setComments]=useState([]);
-
-    const handleAddComment =(newComment) =>{
-      setComments([...comments,newComment]);
-    };
-    
+function CommentsList(item) {
 
   return (
     <div className="CommentsList">
       <h4>Comments</h4>
-      <CommentsForm onAddComment={handleAddComment}/>
        {/* Display comments */}
-       <ul>
+
+      {
+      item.comments && item.comments.map((comment) => (
+        <div className="" key={comment.id}>
+          <p>{comment.name}</p>
+          <p>{comment.text}</p>
+
+       {/* <ul>
         {comments.map((comment, index) => (
           <li key={index}>{comment}</li>
         ))}
-          </ul>
+          </ul> */}
+
         </div>
-  );
+      ))}
+  </div>
+  
       
       /*<CommentsForm />*/
-    }
+    )}
 
 export default CommentsList;
