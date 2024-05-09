@@ -10,7 +10,7 @@ function ItemCard() {
   const temiId = params.id;
 
   useEffect(() =>{
-    fetch(`http://localhost:8002/items/${temiId}`)
+    fetch(`https://seek-n-secure.onrender.com/items/${temiId}`)
     .then(r => r.json())
     .then(data => setTemi(data))
     .catch(error => console.error(error));
@@ -23,7 +23,7 @@ function ItemCard() {
 
   function handleDelete(e) {
     e.preventDefault()
-    fetch(`http://localhost:8002/items/${temiId}`, {
+    fetch(`https://seek-n-secure.onrender.com/items/${temiId}`, {
             method: 'DELETE',
           })
           .then(alert('Delete successful'))

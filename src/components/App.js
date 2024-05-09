@@ -13,7 +13,7 @@ function App() {
   
     //Items
   useEffect(() =>{
-    fetch("http://localhost:8002/items")
+    fetch("https://seek-n-secure.onrender.com/items")
       .then(res => res.json())
       .then(data => setItems(data))
       .catch(error => console.error(error))
