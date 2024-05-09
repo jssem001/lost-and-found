@@ -6,6 +6,7 @@ This project has been done by a group 9 Team members whose names are:
 3) Jean Sheila Wambui Wachuka
 4) Samson Mubeya
 
+
 ## PROJECT DESCRIPTION 
 In this project, the team members are to create a lost and found web application where a user;
 - Can add an image and details or search lost/found items.
@@ -21,7 +22,7 @@ In this project, the team members are to create a lost and found web application
 - The Project should be created with React, Bootstrap/Tailwind css/CSS .
 - Your App should be responsive in all devices.
 - Should communicate to the server(should use JSON server API endpoints.)
-   - The data should have at least  Array which objects with objects or objects with lists - (in db.json)
+- The data should have at least an Array which objects or objects with lists - (in db.json)
 - Should have at least 7 CRUD Operations(Create, Read(Readn 1 item and also all items), Update, Delete)
 - Your app should have at least 6 react components.
 - Should use React Router - have at least 4 client-side routes to navigate  to
@@ -30,7 +31,8 @@ In this project, the team members are to create a lost and found web application
 - Should be deployed(Both db.json and React - No undeployed project will be marked.)"	
 
 ## Endpoints
-The base URL for the back is: ./dbjson
+The base URL for the back is: https://seek-n-secure.onrender.com/items
+Frontend (website): https://effervescent-hamster-7e6676.netlify.app
 
 ## Core Deliverables
 The user should be able to:
@@ -53,6 +55,7 @@ The user should be able to:
     -REACT
     -HTML
     -TAILWIND CSS
+    -AXIOS
 
 ## Support and contact details
 email: muwanguzi.ssemwanga@student.moringaschool.com
@@ -62,10 +65,13 @@ email: skmutai6@gmail.com
 contact: +254723486218
 
 email:jean.wachuka@student.moringaschool.com
-contact:+254743218042
+contact:+254743218042email:
 
-email:rasspartah@gmail.com
+email:rasspartah@gmail.com 
 contact: +254790509413
+
+
+
 
 ## License
   Licensed under the MIT Licence Copyright (c) 2024 **Joshua SSemwanga **Shadrack Mutai **Jean Sheila Wambui Wachuka **Samson Mubeya.
