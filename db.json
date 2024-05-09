@@ -217,29 +217,12 @@
       ]
     },
     {
-      "id": "5",
-      "contact": "0763253921",
-      "name": "Grey Hoodie",
-      "image": "https://i.ebayimg.com/images/g/2H8AAOSwYCdjZBcT/s-l1200.webp",
-      "description": "Found near the teletubies estate",
-      "location": "https://www.google.com/maps?q=-0.9989192,37.1427954&z=17&hl=en",
-      "comments": [
-        {
-          "id": 1,
-          "name": "Gavin",
-          "text": "She is lovely"
-        },
-        {
-          "id": 2,
-          "name": "Vin",
-          "text": "Hey I have him contact me at +1 264 839 89"
-        },
-        {
-          "id": 3,
-          "name": "Marvin",
-          "text": "So glad you found him"
-        }
-      ]
+      "id": "506e",
+      "image": "https://gratisography.com/wp-content/uploads/2024/03/gratisography-funflower-800x525.jpg",
+      "name": "sunglasses",
+      "contact": "098-234-7563",
+      "description": "Cartier sunnies",
+      "location": "on a farm somewhere"
     }
   ]
 }
