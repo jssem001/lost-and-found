@@ -1,55 +1,51 @@
-import React, { useState } from 'react'
-import CommentsList from './CommentsList'
-import CommentsForm from './CommentsForm';
+import React, { useState, useEffect } from 'react'
+import { useParams } from "react-router-dom";
 
 
-function ItemCard({item, setOndelete}) {
-  const [comments,setComments]=useState([]);
 
-  const handleAddComment =(newComment) =>{
-    setComments([...comments,newComment]);
+function ItemCard() {
+
+  const [temi, setTemi] = useState({});
+  const params = useParams();
+  const temiId = params.id;
+
+  useEffect(() =>{
+    fetch(`http://localhost:8002/items/${temiId}`)
+    .then(r => r.json())
+    .then(data => setTemi(data))
+    .catch(error => console.error(error));
+  }, [temiId]);
+
+  if(!temi.name){
+    return <h1>Loading...</h1>;
   };
-  function handleDelete(id) {
-    fetch(`http://localhost:8002/items/${id}`, {
+
+
+  function handleDelete(e) {
+    e.preventDefault()
+    fetch(`http://localhost:8002/items/${temiId}`, {
             method: 'DELETE',
           })
-        .then((res) => res.json())
-        .then((res)=>{
-            setOndelete(id)
-            alert("Item Deleted Successfully!")
-        })
+          .then(alert('Delete successful'))
   }
 
   return (
     <>
-    <div className="bg-gray-500 ">
-      <div className="text-start px-6">
-        <h3> <span className="font-semibold text-3xl text-black" >Name:</span> {item.name}</h3>
-        <p><span className="font-semibold text-3xl text-black" >Contact:</span> {item.contact}</p>
-        <p><span className="font-semibold text-3xl text-black" >Location:</span> {item.location}</p>
-        <p> <span className="font-semibold text-3xl text-black" >Description:</span> <span>{item.description}</span> </p>
-        <img src={item.image} alt="loading..." />
-        <div className="flex justify-between px-4">
-          <button className='bg-gray-700 text-green-700 rounded px-2'>Edit</button>
-          <button onClick={()=> handleDelete(item.id)} type="button" className='bg-gray-700 text-red-700 rounded px-2'>Delete</button>
-        </div>
-        <div className='p-4 text-start text-black'>
-          <h5 className=" p-2 text-gray-300 italic text-xl text-end"> {item.comments.length} comments </h5>
-        </div>
-        <div className=" p-2 text-start">
-          {
-          item.comments && item.comments.map((comment)=>(
-              <div className='p-2 bg-gray-400 my-2 rounded ' key={comment.id}>
-                {/* <p> <span className="font-semibold text-2xl" >{comment.name};</span> <span className='italic text-xl '> {comment.text} </span> </p> */}
-                <CommentsList item={item} />
-                <CommentsForm onAddComment={handleAddComment}/>
-
-              </div>
-          ))
-          }
+      <div className="bg-white mt-5">
+          <div className="text-start px-6">
+            <img class="rounded-lg mx-auto max-w-lg mb-4" src={temi.image} alt="loading..." />
+            <h3> <span className="font-semibold text-xl text-black" >Item:</span> {temi.name}</h3>
+            <p><span className="font-semibold text-xl text-black" >Contact:</span> {temi.contact}</p>
+            <p><span className="font-semibold text-xl text-black" >Location:</span> {temi.location}</p>
+            <p> <span className="font-semibold text-xl text-black" >Description:</span> <span>{temi.description}</span> </p>
+            <div className="flex justify-between px-4">
+              <button className='bg-gray-700 text-green-700 rounded px-2'>Edit</button>
+              <button onClick={handleDelete} type="button" className='bg-red-700 text-white rounded px-2'>Delete</button>
+            </div> 
         </div>
       </div>
-    </div>
+          
+      
 
     </>
   )

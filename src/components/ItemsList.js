@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import ItemCard from './ItemCard';
 import {Link} from 'react-router-dom'
 import Search from './Search';
 
@@ -10,12 +9,10 @@ function ItemsList({items}) {
   const itemsToDisplay = items
     .filter((single) => single.name.toLowerCase().includes(searchTerm.toLowerCase()))
   
-  items.map(item => (
-    <ItemCard key={item.id} item={item} name={item.name} image={item.image} likes={item.likes} />
-  ))
+  
   return (
     <>
-      
+    
       <section class="bg-white dark:bg-white">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
