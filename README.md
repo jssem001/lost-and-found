@@ -87,7 +87,7 @@ contact: +254790509413
 
 
 ## License
-  Licensed under the MIT Licence Copyright (c) 2024 **Joshua SSemwanga **Shadrack Mutai **Jean Sheila Wambui Wachuka **Samson Mubeya.
+  Licensed under the MIT Licence Copyright (c) 2024 **Joshua Ssemwanga **Shadrack Mutai **Jean Sheila Wambui Wachuka **Samson Mubeya.
         
 
     
