@@ -28,7 +28,20 @@ In this project, the team members are to create a lost and found web application
 - Should use React Router - have at least 4 client-side routes to navigate  to
 - Should use react hooks(useState and useEffect
 - Should have a well-documented Readme and License files.)
-- Should be deployed(Both db.json and React - No undeployed project will be marked.)"	
+- Should be deployed(Both db.json and React - No undeployed project will be marked.)"
+
+## Video Demos
+
+View and search lost items
+https://github.com/user-attachments/assets/ca4362f1-ef5a-445d-b74d-f64817f4e0ec
+
+
+Adding a lost item
+https://github.com/user-attachments/assets/f9344a70-2885-46e8-8305-243c629f4e7b
+
+
+
+
 
 ## Endpoints
 The base URL for the back is: https://seek-n-secure.onrender.com/items
